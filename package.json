@@ -1,11 +1,11 @@
 {
-  "name": "@trilogy-group/dynamodb-lock-client-v3",
-  "version": "1.0.3",
-  "description": "A general-purpose distributed locking library built for AWS DynamoDB V3.",
+  "name": "@ikea-ipex-kp/dynamodb-lock-client-v3",
+  "version": "1.0.0",
+  "description": "A general-purpose distributed locking library built for AWS DynamoDB V3. (Renamed from @trilogy-group)",
   "types": "types/index.d.ts",
   "scripts": {
     "inject-examples": "node scripts/injectExamples.js",
-    "prepublishOnly": "npm run inject-examples",
+    "prepublishOnly": "npm run test && npm run inject-examples",
     "readme": "node examples/readme.js",
     "test": "jest"
   },
@@ -17,7 +17,7 @@
     "@hapi/joi": "17.1.1"
   },
   "peerDependencies": {
-    "@aws-sdk/client-dynamodb": "3.17.x"
+    "@aws-sdk/client-dynamodb": "^3.485.0"
   },
   "repository": {
     "type": "git",
@@ -37,8 +37,5 @@
     "Cooper Bell <john.cooper.bell@gmail.com>",
     "Katarina Golbang"
   ],
-  "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "license": "MIT"
 }
