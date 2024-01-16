@@ -1,6 +1,6 @@
 {
   "name": "@ikea-ipex-kp/dynamodb-lock-client-v3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A general-purpose distributed locking library built for AWS DynamoDB V3. (Renamed from @trilogy-group)",
   "types": "types/index.d.ts",
   "scripts": {
